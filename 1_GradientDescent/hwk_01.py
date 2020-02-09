@@ -45,12 +45,25 @@ for i in range(iteration):
         w_grad = w_grad + (b + w*x_data[n] - y_data[n]) * x_data[n]
     # stop iterations when target gradient is reached
     if abs(b_grad) < target_gradient and abs(w_grad) < target_gradient:
-        print(f"Reached target gradient of less than 0.0001 in {iterations} iterations")
+        print(f"Reached target gradient of less than 0.0001 in {iterations} iterations.")
         break
     b -= lr * b_grad
     w -= lr * w_grad
     b_history.append(b)
     w_history.append(w)
+
+# calculate h(x) using b and w
+hx_data = w * x_data + b
+
+# sum up the squares of h(x) - y and divide by two
+sum_of_squares = 0
+for i in range(len(y_data)):
+    sum_of_squares += (hx_data[i] - y_data[i]) ** 2
+loss = sum_of_squares / 2.0
+
+print(f"Calculated loss J(w) = {loss}")
+
+
 plt.plot(b_history, w_history, 'o-', ms=.5, lw=1.5,color='black')
 plt.plot(52, 2,"X", color = "yellow", markersize = 10)
 plt.title(f'LR = ' + '%f'%lr + f'  Iterations = {iterations}')
