@@ -130,6 +130,8 @@ dmypy.json
 
 # Folders to ignore
 books/
+animals/
 
 # Pictures
+*.jpg
 *.png
