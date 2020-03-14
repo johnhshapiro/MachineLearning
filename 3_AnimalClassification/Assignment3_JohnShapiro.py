@@ -9,26 +9,29 @@ from sklearn.neighbors import KNeighborsClassifier
 Distances = [1,2]
 K = [3,5,7]
 
-
 dataset_path = "animals/"
 data = []
 labels = []
 
 # List of classes (in our case; animals)
-class_folders = os.listdir(dataset_path)
+try:
+    class_folders = os.listdir(dataset_path)
+except:
+    print("The dataset_path is incorrect")
+    exit(0)
 
 # traverse each class folder, get the image data,
 # and label based on the folder the image is in
 for class_name in class_folders:
     image_list = os.listdir(dataset_path + class_name)
-    print(class_name)
+    print("loading", class_name, ":")
     for image_name in image_list:
         image = cv2.imread(dataset_path + class_name + '/' + image_name)
         dimensions = image.shape
         image = cv2.resize(image, (32, 32), interpolation=cv2.INTER_CUBIC)
         data.append(image)
         labels.append(class_name.replace('s',''))
-    print('Folder Done')
+    print("   ", class_name, "loaded")
 
 # Transform data into a list of vectors in a numpy array
 data = np.array(data)
