@@ -135,3 +135,11 @@ animals/
 # Pictures
 *.jpg
 *.png
+
+# Assignment 4 demo code
+4_Midterm/.~lock.Midterm_Homework_2020S.docx#
+4_Midterm/8_SVM1_midterm.pdf
+4_Midterm/Midterm_Homework_2020S.docx
+4_Midterm/5_SVM_basic.py
+4_Midterm/5_SVM_Kernels_iris.py
+4_Midterm/5_SVM_MNISTcsv_demo.py
