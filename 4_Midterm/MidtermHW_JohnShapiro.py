@@ -10,22 +10,27 @@ from sklearn import svm
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 
-data = pd.read_csv('iris.csv')
+dataset_path = 'iris.csv'
+try:
+    data = pd.read_csv(dataset_path)
+except:
+    print("Make sure the dataset_path is correct")
+    exit(0)
 X = data.iloc[:,:-1]
 y = data.iloc[:,4]
 le = preprocessing.LabelEncoder()
 ylabels = le.fit_transform(y)
 
-test_sizes = [i/10 for i in range(1,5)]
+test_sizes = [i/10 for i in range(1,6)]
 
 for size in test_sizes:
     trainX, testX, trainY, testY = train_test_split(X, ylabels, test_size=size, random_state=0)
 
     model = svm.SVC(kernel='linear', C=1.0)
     model.fit(trainX, trainY)
-    predicted_labels = model.predict(testX)
+    y_pred = model.predict(testX)
     print("SVC linear kernel with test_size =", size)
-    print(classification_report(testY, predicted_labels, target_names=le.classes_))
+    print(classification_report(testY, y_pred, target_names=le.classes_))
 
     logistic_regression = LogisticRegression(max_iter=10000)
     logistic_regression.fit(trainX, trainY)
@@ -49,8 +54,8 @@ for size in test_sizes:
 #     for svm_kernel in svm_kernels:
 #         kernel = svm.SVC(kernel=svm_kernel, C=1.0)
 #         kernel.fit(trainX, trainY)
-#         predicted_labels = kernel.predict(testX)
-#         f_score = f1_score(testY, predicted_labels, average='macro')
+#         y_pred = kernel.predict(testX)
+#         f_score = f1_score(testY, y_pred, average='macro')
 #         print(svm_kernel, f_score)
 #         if f_score > best_f:
 #             best_f = f_score
