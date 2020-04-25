@@ -50,9 +50,9 @@ class NeuralNetwork:
 X_test = np.array(([0,0,0],[1,1,1]), dtype=float)
 
 NN = NeuralNetwork(X,y)
-for i in range(10000): # trains the NN 1,000 times
+for i in range(1500): # trains the NN 1,000 times
     NN.train(X, y)
-    if (i % 300 ==0) & (i != 0): 
+    if i % 300 ==0: 
     #     print ("for iteration # " + str(i) + "\n")
     #     print ("Input : \n" + str(X))
     #     print ("Actual Output: \n" + str(y))
