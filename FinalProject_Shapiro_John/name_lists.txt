@@ -1,0 +1,50 @@
+['uij', 'xdtmy', 'fcuuia', 'jeti', 'lbkvl', 'wltdqd', 'kxbp', 'hmtr', 'rqwa', 'owtm', 'Epochs: 100000']
+              precision    recall  f1-score   support
+
+           0       0.78      0.78      0.78       420
+           1       0.85      0.85      0.85       602
+
+    accuracy                           0.82      1022
+   macro avg       0.81      0.81      0.81      1022
+weighted avg       0.82      0.82      0.82      1022
+
+['xznxo', 'hdxdennva', 'gsojpr', 'orfah', 'kibj', 'fkszdes', 'qkyfmrln', 'gpnser', 'nbudxydjr', 'cwo', 'Epochs: 200000']
+              precision    recall  f1-score   support
+
+           0       0.78      0.78      0.78       420
+           1       0.85      0.84      0.85       602
+
+    accuracy                           0.82      1022
+   macro avg       0.81      0.81      0.81      1022
+weighted avg       0.82      0.82      0.82      1022
+
+['fauisqc', 'oiapi', 'ocohu', 'qvfdg', 'vbcdh', 'elkpevkj', 'ocmtwh', 'jufx', 'ykskbww', 'fonybghpl', 'Epochs: 300000']
+              precision    recall  f1-score   support
+
+           0       0.77      0.78      0.78       420
+           1       0.85      0.84      0.84       602
+
+    accuracy                           0.82      1022
+   macro avg       0.81      0.81      0.81      1022
+weighted avg       0.82      0.82      0.82      1022
+
+['ubpvfojpd', 'vptzr', 'iaf', 'ithbm', 'ucuedgd', 'tmzbkj', 'fdzhxlqa', 'intv', 'dalgxtamqaes', 'wjh', 'Epochs: 400000']
+              precision    recall  f1-score   support
+
+           0       0.78      0.78      0.78       420
+           1       0.85      0.84      0.84       602
+
+    accuracy                           0.82      1022
+   macro avg       0.81      0.81      0.81      1022
+weighted avg       0.82      0.82      0.82      1022
+
+['fptdz', 'aruufwsudf', 'dpajwmiwa', 'lbsudhl', 'fhieu', 'flu', 'dpwv', 'xneokcqf', 'bebg', 'xumtmn', 'Epochs: 500000']
+              precision    recall  f1-score   support
+
+           0       0.78      0.78      0.78       420
+           1       0.85      0.84      0.84       602
+
+    accuracy                           0.82      1022
+   macro avg       0.81      0.81      0.81      1022
+weighted avg       0.82      0.82      0.82      1022
+

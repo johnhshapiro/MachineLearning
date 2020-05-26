@@ -1,4 +1,3 @@
-
 import numpy as np
 import pandas as pd
 import matplotlib
@@ -20,6 +19,7 @@ X = data.iloc[:,:-1]
 y = data.iloc[:,4]
 le = preprocessing.LabelEncoder()
 ylabels = le.fit_transform(y)
+print(ylabels)
 
 test_sizes = [i/10 for i in range(1,6)]
 

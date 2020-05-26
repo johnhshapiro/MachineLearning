@@ -1,0 +1,11 @@
+The decision tree did this:
+['zxoi', 'lzl', 'hnxjqaggb', 'ramdtdn', 'dnrxg', 'iczfwhmpa', 'btgedm', 'ercso', 'nhrs', 'oqiicdea']
+
+100,000 epochs generating 10 names
+['jtvbsw', 'hagsscy', 'phummdm', 'dwsyebhr', 'oalnkmnhcaefx', 'efki', 'ovvmfp', 'jlgsbur', 'wzdno', 'gddcaii']
+
+100,000 epochs generating not names
+['larswxqotkboh', 'nkzhqordseofhtd', 'jnrwurqkodoq', 'atjukaepmjmynrn', 'ssunjahyemedq', 'heffvbsfrxc', 'hhuiomaxkenj', 'ozwdfgfuonx', 'uptonngqqghq', 'gycsehbfulg']
+
+10 "names" after 200,000 epochs
+['dful', 'mert', 'dwejuwc', 'hhjvry', 'eydzc', 'ndgilgk', 'salw', 'lepgqn', 'eoaj', 'dfsetefs']
